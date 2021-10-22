@@ -27,7 +27,7 @@ import org.springframework.web.bind.annotation.RestController;
  * @author Laura
  */
 @RestController
-@RequestMapping("/api/Computers")
+@RequestMapping("/api/Computer")
 @CrossOrigin(origins = "*", methods = {RequestMethod.GET, RequestMethod.POST, RequestMethod.PUT, RequestMethod.DELETE})
 public class ComputersController {
     
