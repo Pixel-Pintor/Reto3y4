@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="../JS/functionsCategory.js"></script>
+  <link rel="stylesheet" href="../CSS/indexStyle.css">
+  <title>Detail Category</title>
+</head>
+<body>
+  <div class="container">
+    <div class="container-entity">
+      <h2 class="container-header">Update Category</h2>
+      <form class="container-form">
+        <label for="cat-id-upd">Id</label>
+        <input type="number" id="cat-id-upd" disabled>
+        <label for="cat-name-upd">Name</label>
+        <input type="text" id="cat-name-upd" placeholder="New Name">
+        <label for="cat-desc-upd">Description</label>
+        <textarea id="cat-desc-upd" cols="20" rows="7" placeholder="New Description"></textarea>
+      </form>
+      <div class="container-buttons">
+        <button class="btn-update" onclick="updateCategory()">UPDATE</button>
+        <a class="link-home" href="../index.html">BACK HOME</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

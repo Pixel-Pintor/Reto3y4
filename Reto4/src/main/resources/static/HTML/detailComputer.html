@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="../JS/functionsComputer.js"></script>
+  <link rel="stylesheet" href="../CSS/indexStyle.css">
+  <title>Detail Computer</title>
+</head>
+<body>
+  <div class="container">
+    <div class="container-entity">
+      <h2 class="container-header">Update Computer</h2>
+      <form class="container-form">
+        <label for="com-id-upd">Id</label>
+        <input type="number" id="com-id-upd" disabled>
+        <label for="com-name-upd">Name</label>
+        <input type="text" id="com-name-upd" placeholder="New Number">
+        <label for="com-brand-upd">Brand</label>
+        <input type="text" id="com-brand-upd" placeholder="New Brand">
+        <label for="com-year-upd">Year</label>
+        <input type="number" id="com-year-upd" placeholder="New Year">
+        <label for="com-desc-upd">Description</label>
+        <textarea id="com-desc-upd" cols="20" rows="7" placeholder="New Description"></textarea>
+      </form>
+      <div class="container-buttons">
+        <button class="btn-update" onclick="updateComputer()">UPDATE</button>
+        <a class="link-home" href="../index.html">BACK HOME</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <link rel="stylesheet" href="CSS/indexStyle.css">
+  <meta charset="UTF-8">
+  <title>Reto 3</title>
+</head>
+<body>
+  <div class="container">
+
+    <div class="container-entity">
+      <h2 class="container-header">Category</h2>
+      <form class="container-form">
+        <label for="cat-name">Name</label>
+        <input type="text" id="cat-name" placeholder="Category Name">
+        <label for="cat-desc">Description</label>
+        <input type="text" id="cat-desc" placeholder="Category Description">
+      </form>
+      <div class="container-buttons">
+        <button onclick="checkInfoCategory()" class="btn-check">CHECK DATA BASE</button>
+        <button onclick="saveInfoCategory()" class="btn-save">SAVE CATEGORY</button>
+      </div>
+      <div class="container-table" id="table-category"></div>
+    </div>
+
+    <div class="container-entity">
+      <h2 class="container-header">Computer</h2>
+      <form class="container-form">
+        <label for="com-name">Name</label>
+        <input type="text" id="com-name" placeholder="Computer Name">
+        <label for="com-brand">Brand</label>
+        <input type="text" id="com-brand" placeholder="Computer Brand">
+        <label for="com-year">Year</label>
+        <input type="number" id="com-year" placeholder="Computer Year">
+        <label for="com-desc">Description</label>
+        <textarea id="com-desc" cols="20" rows="7" placeholder="Computer Description"></textarea>
+      </form>
+      <div class="container-buttons">
+        <button onclick="checkInfoComputer()" class="btn-check">CHECK DATA BASE</button>
+        <button onclick="saveInfoComputer()" class="btn-save">SAVE COMPUTER</button>
+      </div>
+      <div class="container-table" id="table-computer"></div>
+    </div>
+
+    <div class="container-entity">
+      <h2 class="container-header">Client</h2>
+      <form class="container-form">
+        <label for="cli-email">Email</label>
+        <input type="email" id="cli-email" placeholder="Client Email">
+        <label for="cli-password">Password</label>
+        <input type="password" id="cli-password" placeholder="Client Password">
+        <label for="cli-name">Name</label>
+        <input type="text" id="cli-name" placeholder="Client Name">
+        <label for="cli-age">Age</label>
+        <input type="number" id="cli-age" placeholder="Client Age">
+      </form>
+      <div class="container-buttons">
+        <button onclick="checkInfoClient()" class="btn-check">CHECK DATA</button>
+        <button onclick="saveInfoClient()" class="btn-save">SAVE COMPUTER</button>
+      </div>
+      <div class="container-table" id="table-client"></div>
+    </div>
+
+    <div class="container-entity">
+      <h2 class="container-header">Message</h2>
+      <form class="container-form">
+        <label for="mess-text">Message Text</label>
+        <textarea id="mess-text" cols="20" rows="7" placeholder="Message Text"></textarea>
+      </form>
+      <div class="container-buttons">
+        <button onclick="checkInfoMessage()" class="btn-check">CHECK DATA</button>
+        <button onclick="saveInfoMessage()" class="btn-save">SAVE MESSAGE</button>
+      </div>
+      <div class="container-table" id="table-message"></div>
+    </div>
+    
+    <div class="container-entity">
+      <h2 class="container-header">Reservation</h2>
+      <form class="container-form">
+        <label for="start-date">Start Date</label>
+        <input type="date" id="start-date">
+        <label for="devol-date">Devolution Date</label>
+        <input type="date" id="devol-date">
+        <label for="reserv-score">Score</label>
+        <input type="number" id="reserv-score" placeholder="Score">
+      </form>
+      <div class="container-buttons">
+        <button onclick="checkInfoReservation()" class="btn-check">CHECK DATA</button>
+        <button onclick="saveInfoReservation()" class="btn-save">SAVE RESERVATION</button>
+      </div>
+      <div class="container-table" id="table-reservation"></div>
+    </div>
+  </div>
+  <script src="JS/functionsCategory.js"></script>
+  <script src="JS/functionsClient.js"></script>
+  <script src="JS/functionsComputer.js"></script>
+  <script src="JS/functionsMessage.js"></script>
+  <script src="JS/functionsReservation.js"></script>
+</body>
+</html>
